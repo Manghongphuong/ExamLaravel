@@ -14,7 +14,14 @@ class EmailController extends Controller
             'email' => 'required|string',
             'subject' => 'required|string',
             'message' => 'required|string',
-        ]);
+        ], 
+        [
+            'email.required' => 'Vui lòng nhập địa chỉ email.',
+            'subject.required' => 'Vui lòng nhập tiêu đề.',
+            'message.required' => 'Vui lòng nhập nội dung.',
+        ]
+    );
+
     
         // Tách các email nếu có nhiều email
         $emails = preg_split('/[,\s]+/', $data['email'], -1, PREG_SPLIT_NO_EMPTY);

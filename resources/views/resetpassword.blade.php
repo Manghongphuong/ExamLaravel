@@ -33,34 +33,25 @@
                   <img src="../../assets/images/logo.svg" alt="logo">
                 </div>
                 <h4>Hello! let's get started</h4>
-                <h6 class="fw-light">Sign in to continue.</h6>
-                <form class="pt-3" action="{{ route('login') }}" method="POST">
+                <h6 class="fw-light">Đặt lại mật khẩu.</h6>
+                <form class="pt-3" action="{{ route('password.update') }}" method="POST">
                   @csrf
-                  @if (session('success'))
-                      <div class="alert alert-success">
-                          {{ session('success') }}
-                      </div>
-                  @endif
-                  @if ($errors->has('login'))
-                      <div style="color: red; padding: 10px; border: 1px solid red; margin-bottom: 10px;">
-                          {{ $errors->first('login') }}
-                      </div>
-                  @endif
+                  <input type="hidden" name="token" value="{{ $token }}">
                   <div class="form-group">
                     <input type="email" name="email" value="{{ old('email') }}" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
                     @error('email')<p style="color: red">{{ $message }}</p>@enderror
                   </div>
                   <div class="form-group">
-                    <input type="password" name="password" value="{{ old('password') }}" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" name="password" value="{{ old('password') }}" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="New password">
                     @error('password')<p style="color: red">{{ $message }}</p>@enderror
                   </div>
+                  <div class="form-group">
+                    <input type="password" name="password_confirmation" value="{{ old('password_confirmation') }}" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password confirmation">
+                    @error('password_confirmation')<p style="color: red">{{ $message }}</p>@enderror
+                  </div>
                   <div class="mt-3 d-grid gap-2">
-                    <button type="submit" class="btn btn-block btn-primary btn-lg fw-medium auth-form-btn">SIGN UP</button>
+                    <button type="submit" class="btn btn-block btn-primary btn-lg fw-medium auth-form-btn">UPDATE PASSWORD</button>
                   </div>
-                  <div class="my-2 d-flex justify-content-between align-items-center">
-                    <a href="{{ route('forgot_password')}}" class="auth-link text-black">Forgot password?</a>
-                  </div>
-                  <div class="text-center mt-4 fw-light"> Don't have an account? <a href="{{ route('pageregister')}}" class="text-primary">Create</a>
                   </div>
                 </form>
               </div>

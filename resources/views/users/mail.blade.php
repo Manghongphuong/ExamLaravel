@@ -8,6 +8,5 @@
 </head>
 <body>
     <p>Nội dung: {{ $data['message'] }}</p>
-    <p>Cảm ơn bạn đã sử dụng dịch vụ!</p>
 </body>
 </html>

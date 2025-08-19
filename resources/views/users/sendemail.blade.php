@@ -18,17 +18,20 @@
                         @csrf
                         <div class="form-group">
                             <label for="email">Email Người Nhận</label>
-                            <input type="text" class="form-control" name="email" id="email" placeholder="Nhập nhiều email, cách nhau bằng dấu phẩy (,)" required>
+                            <input type="text" class="form-control" name="email" value="{{ old('email') }}" id="email" placeholder="Nhập nhiều email, cách nhau bằng dấu phẩy (,)">
+                            @error('email')<p style="color: red">{{ $message }}</p>@enderror
                         </div>
 
                         <div class="form-group">
                             <label for="subject">Tiêu Đề</label>
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Nhập tiêu đề" required>
+                            <input type="text" class="form-control" name="subject" value="{{ old('subject') }}" id="subject" placeholder="Nhập tiêu đề">
+                            @error('subject')<p style="color: red">{{ $message }}</p>@enderror
                         </div>
 
                         <div class="form-group">
                             <label for="message">Nội Dung</label>
-                            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Nhập nội dung email" required></textarea>
+                            <textarea class="form-control" name="message" value="{{ old('message') }}" id="message" rows="4" placeholder="Nhập nội dung email"></textarea>
+                            @error('message')<p style="color: red">{{ $message }}</p>@enderror
                         </div>
 
                         <button type="submit" class="btn btn-primary me-2">Gửi Email</button>

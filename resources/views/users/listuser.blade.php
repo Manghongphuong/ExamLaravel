@@ -20,6 +20,7 @@
                                 <th> STT </th>
                                 <th> Thành viên </th>
                                 <th> Vai Trò </th>
+                                <th> Công Việc </th>
                                 <th> Công cụ </th>
                             </tr>
                         </thead>
@@ -29,7 +30,12 @@
                                     <td> {{ $users->firstItem() + $index }} </td>
                                     <td> {{ $user->name }} </td>
                                     <td> {{ $user->role }} </td>
+                                    <td> {{ $user->role }} </td>
                                     <td> 
+                                        <form action="" method="POST" style="display: inline-block">
+                                            @csrf
+                                            <button type="submit" class="btn btn-danger">Authorization</button>
+                                        </form>
                                         <form action="{{ route('destroy_user', $user->id) }}" method="POST" style="display: inline-block">
                                             @csrf
                                             <button type="submit" class="btn btn-danger">Delete</button>

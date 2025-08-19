@@ -52,7 +52,6 @@ class ProductsController extends Controller
             $destinationPath = public_path('images');
         
             $uploadedFile->move($destinationPath, $filename);
-            //{{ dd(asset('images/' . $products->image)) }} kiểm tra hiển thị đường dẫn url
             // $url = asset('images/' . $filename);// lưu cả url vào db
             $pro->image = $filename; // Chỉ lưu tên file trong database
         }
@@ -98,7 +97,7 @@ class ProductsController extends Controller
         $uppro->slug = $request->infoproduct;
         $uppro->price = $request->price;
 
-        if ($request->file('file_upload')->isValid()) {
+        if ($request->has('file_upload')) {
             $uploadedFile = $request->file('file_upload');
             $extension = $uploadedFile->getClientOriginalExtension();
             $filename = time() . '.' . $extension;

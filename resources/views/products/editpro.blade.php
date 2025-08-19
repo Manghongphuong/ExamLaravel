@@ -35,12 +35,10 @@
                     <div class="form-group">
                         <label>Tải Anh</label>
                         <input type="file" class="form-control" name="file_upload" id="inputGroupFile01">
-                        @if($editpro->image)
-                            <div class="mt-2">
-                                <label>Ảnh hiện tại:</label><br>
-                                <img src="{{ asset('images/' . $editpro->image) }}" alt="Product Image" style="width: 200px; height: auto;">
-                            </div>
-                        @endif
+                        <div class="mt-2">
+                            <label>Ảnh hiện tại:</label><br>
+                            <img src="{{ asset('images/' . $editpro->image) }}" alt="Product Image" style="width: 200px; height: auto;">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="exampleTextarea1">Chi Tiết</label>
