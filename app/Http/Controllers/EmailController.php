@@ -20,9 +20,7 @@ class EmailController extends Controller
             'subject.required' => 'Vui lòng nhập tiêu đề.',
             'message.required' => 'Vui lòng nhập nội dung.',
         ]
-    );
-
-    
+        );
         // Tách các email nếu có nhiều email
         $emails = preg_split('/[,\s]+/', $data['email'], -1, PREG_SPLIT_NO_EMPTY);
         
@@ -35,7 +33,6 @@ class EmailController extends Controller
                 $successCount++;
             }
         }
-    
         return back()->with('success', "Đã gửi thành công $successCount email!");
     }
 }

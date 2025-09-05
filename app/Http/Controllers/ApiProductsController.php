@@ -9,9 +9,7 @@ use App\Http\Resources\SanPham;
 
 class ApiProductsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     public function index()
     {
         //method: get
@@ -19,20 +17,6 @@ class ApiProductsController extends Controller
         return SanPham::collection($products); //trả về collection định nghịa theo resource SanPham
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //method: post
-        // nhận request từ phía client gửi (form or json body) được thực thi bởi method: post
-        $product = Products::create($request->all());
-        return new SanPham($product); // trả về instance của SanPham vừa tạo xong
-    }
-
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
         //method: get
@@ -41,9 +25,14 @@ class ApiProductsController extends Controller
         return new SanPham($product);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+    public function store(Request $request)
+    {
+        //method: post
+        // nhận request từ phía client gửi (form or json body) được thực thi bởi method: post
+        $product = Products::create($request->all());
+        return new SanPham($product); // trả về instance của SanPham vừa tạo xong
+    }
+
     public function update(Request $request, string $id)
     {
         //method: put or patch
@@ -52,13 +41,10 @@ class ApiProductsController extends Controller
         $product->update($request->all());
         return response()->json([
             'message' => 'Cập nhật thành công',
-            'data' => new SanPham($product)
+            'data' => new SanPham($product->fresh())
         ], 200);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
         //method: delete

@@ -31,6 +31,12 @@ class AdminController extends Controller
         $user->name = $validated['name'];
         $user->email = $validated['email'];
         $user->password = Hash::make($validated['password']);
+        // Nếu đang ở trang admin thì role = admin
+        if ($request->is('admin/register')) {
+            $user->role = 'admin';
+        } else {
+            $user->role = 'user';
+        }
         $user->save();
 
         return  redirect()->back()->with('success', 'Đăng ký tài khoản thành công!');

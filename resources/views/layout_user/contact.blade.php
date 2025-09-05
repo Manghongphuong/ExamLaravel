@@ -7,9 +7,9 @@
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
-								<h1>Contact</h1>
-								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+								<h1>Liên Hệ</h1>
+								<p class="mb-4">Dội ngũ Furni luôn hỗ trợ 24/7</p>
+								<p><a href="" class="btn btn-secondary me-2">Khám Phá</a><a href="#" class="btn btn-white-outline">Xem Thêm</a></p>
 							</div>
 						</div>
 						<div class="col-lg-7">
@@ -36,7 +36,7 @@
 							</svg>
 							</div> <!-- /.icon -->
 							<div class="service-contents">
-							<p>43 Raymouth Rd. Baltemoer, London 3910</p>
+							<p>Nha Trang, Khánh Hòa</p>
 							</div> <!-- /.service-contents-->
 						</div> <!-- /.service -->
 						</div>
@@ -72,28 +72,28 @@
 						<div class="row">
 						<div class="col-6">
 							<div class="form-group">
-							<label class="text-black" for="fname">First name</label>
+							<label class="text-black" for="fname">Tên</label>
 							<input type="text" class="form-control" id="fname">
 							</div>
 						</div>
 						<div class="col-6">
 							<div class="form-group">
-							<label class="text-black" for="lname">Last name</label>
+							<label class="text-black" for="lname">Họ</label>
 							<input type="text" class="form-control" id="lname">
 							</div>
 						</div>
 						</div>
 						<div class="form-group">
-						<label class="text-black" for="email">Email address</label>
+						<label class="text-black" for="email">Email</label>
 						<input type="email" class="form-control" id="email">
 						</div>
 
 						<div class="form-group mb-5">
-						<label class="text-black" for="message">Message</label>
+						<label class="text-black" for="message">Nội Dung Tin Nhắn</label>
 						<textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
 						</div>
 
-						<button type="submit" class="btn btn-primary-hover-outline">Send Message</button>
+						<button type="submit" class="btn btn-primary-hover-outline">Gửi Tin</button>
 					</form>
 
 					</div>

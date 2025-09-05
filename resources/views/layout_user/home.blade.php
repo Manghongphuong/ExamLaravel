@@ -7,9 +7,11 @@
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
-								<h1>Modern Interior <span clsas="d-block">Design Studio</span></h1>
-								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+								<h1>Studio Nội Thất <span clsas="d-block">Hiện Đại</span></h1>
+								<p class="mb-4">Mang đến không gian sống tinh tế, tiện nghi với những thiết kế tối giản, sang trọng.</p>
+								<p>
+									<a href="" class="btn btn-secondary me-2">Khám Phá</a>
+									<a href="#" class="btn btn-white-outline">Xem Thêm</a></p>
 							</div>
 						</div>
 						<div class="col-lg-7">
@@ -29,9 +31,9 @@
 
 					<!-- Start Column 1 -->
 					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
-						<h2 class="mb-4 section-title">Crafted with excellent material.</h2>
-						<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. </p>
-						<p><a href="shop.html" class="btn">Explore</a></p>
+						<h2 class="mb-4 section-title">Tinh Tế Trong Từng Chất Liệu</h2>
+						<p class="mb-4">Mỗi sản phẩm được chế tác từ chất liệu cao cấp, bền bỉ và an toàn, mang đến trải nghiệm thoải mái cho không gian sống của bạn.</p>
+						<p><a href="shop.html" class="btn">Xem Thêm</a></p>
 					</div> 
 					<!-- End Column 1 -->
 
@@ -61,8 +63,8 @@
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-lg-6">
-						<h2 class="section-title">Why Choose Us</h2>
-						<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+						<h2 class="section-title">Tại Sao Chọn Chúng Tôi</h2>
+						<p>Chúng tôi cam kết mang đến cho bạn trải nghiệm mua sắm nội thất hiện đại, tiện lợi và đáng tin cậy.</p>
 
 						<div class="row my-5">
 							<div class="col-6 col-md-6">
@@ -70,8 +72,8 @@
 									<div class="icon">
 										<img src="{{ asset('furni/images/truck.svg') }}" alt="Image" class="imf-fluid">
 									</div>
-									<h3>Fast &amp; Free Shipping</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<h3>Giao Hàng Nhanh &amp; Miễn Phí</h3>
+									<p>Vận chuyển nhanh chóng, miễn phí toàn quốc cho mọi đơn hàng.</p>
 								</div>
 							</div>
 
@@ -80,8 +82,8 @@
 									<div class="icon">
 										<img src="{{ asset('furni/images/bag.svg') }}" alt="Image" class="imf-fluid">
 									</div>
-									<h3>Easy to Shop</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<h3>Mua Sắm Dễ Dàng</h3>
+									<p>Đặt hàng chỉ với vài bước, giao diện thân thiện và đơn giản cho mọi người dùng.</p>
 								</div>
 							</div>
 
@@ -90,18 +92,18 @@
 									<div class="icon">
 										<img src="{{ asset('furni/images/support.svg') }}" alt="Image" class="imf-fluid">
 									</div>
-									<h3>24/7 Support</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<h3>Hỗ Trợ 24/7</h3>
+									<p>Đội ngũ tư vấn viên luôn sẵn sàng hỗ trợ bạn mọi lúc, kể cả ngoài giờ hành chính.</p>
 								</div>
 							</div>
 
 							<div class="col-6 col-md-6">
 								<div class="feature">
 									<div class="icon">
-										<img src="images/return.svg" alt="Image" class="imf-fluid">
+										<img src="{{ asset('furni/images/return.svg') }}" alt="Image" class="imf-fluid">
 									</div>
-									<h3>Hassle Free Returns</h3>
-									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+									<h3>Đổi Trả Linh Hoạt</h3>
+									<p>Chính sách đổi trả nhanh chóng, dễ dàng, đảm bảo quyền lợi tốt nhất cho khách hàng.</p>
 								</div>
 							</div>
 
@@ -131,16 +133,16 @@
 						</div>
 					</div>
 					<div class="col-lg-5 ps-lg-5">
-						<h2 class="section-title mb-4">We Help You Make Modern Interior Design</h2>
-						<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+						<h2 class="section-title mb-4">Chúng tôi giúp bạn thiết kế nội thất hiện đại</h2>
+						<p>Chúng tôi chuyên cung cấp giải pháp thiết kế nội thất hiện đại, giúp bạn biến không gian sống thành nơi thoải mái và phong cách. Với đội ngũ chuyên gia giàu kinh nghiệm, chúng tôi cam kết mang đến sự hài lòng từ khâu tư vấn đến hoàn thiện.</p>
 
 						<ul class="list-unstyled custom-list my-4">
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
-							<li>Donec vitae odio quis nisl dapibus malesuada</li>
+							<li>Tư vấn thiết kế cá nhân hóa</li>
+							<li>Sử dụng vật liệu cao cấp</li>
+							<li>Chất liệu nhập khẩu từ nước ngoài</li>
+							<li>Đáp ứng nhu cầu tiêu dùng của khách hàng</li>
 						</ul>
-						<p><a herf="#" class="btn">Explore</a></p>
+						<p><a herf="#" class="btn">Xem Thêm</a></p>
 					</div>
 				</div>
 			</div>
@@ -151,147 +153,27 @@
 		<div class="popular-product">
 			<div class="container">
 				<div class="row">
-
+					@foreach ($products_view as $product)
 					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
 						<div class="product-item-sm d-flex">
 							<div class="thumbnail">
-								<img src="{{ asset('furni/images/product-1.png') }}" alt="Image" class="img-fluid">
+								<img src="{{ asset('images/' . $product->image) }}" alt="Image" class="img-fluid">
 							</div>
 							<div class="pt-3">
-								<h3>Nordic Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-								<p><a href="#">Read More</a></p>
+								<h3>{{ $product->name }}</h3>
+								<p>{{ $product->slug }}</p>
+								<p><a href="#">Đọc Thêm</a></p>
 							</div>
 						</div>
 					</div>
-
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="{{ asset('furni/images/product-2.png') }}" alt="Image" class="img-fluid">
-							</div>
-							<div class="pt-3">
-								<h3>Kruzo Aero Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-								<p><a href="#">Read More</a></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-						<div class="product-item-sm d-flex">
-							<div class="thumbnail">
-								<img src="{{ asset('furni/images/product-3.png') }}" alt="Image" class="img-fluid">
-							</div>
-							<div class="pt-3">
-								<h3>Ergonomic Chair</h3>
-								<p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
-								<p><a href="#">Read More</a></p>
-							</div>
-						</div>
-					</div>
-
+					@endforeach
 				</div>
 			</div>
 		</div>
 		<!-- End Popular Product -->
 
 		<!-- Start Testimonial Slider -->
-		<div class="testimonial-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 mx-auto text-center">
-						<h2 class="section-title">Testimonials</h2>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-lg-12">
-						<div class="testimonial-slider-wrap text-center">
-
-							<div id="testimonial-nav">
-								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
-								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
-							</div>
-
-							<div class="testimonial-slider">
-								
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="{{ asset('furni/images/person-1.png') }}" alt="Maria Jones" class="img-fluid">
-													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item -->
-
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="{{ asset('furni/images/person-1.png') }}" alt="Maria Jones" class="img-fluid">
-													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item -->
-
-								<div class="item">
-									<div class="row justify-content-center">
-										<div class="col-lg-8 mx-auto">
-
-											<div class="testimonial-block text-center">
-												<blockquote class="mb-5">
-													<p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-												</blockquote>
-
-												<div class="author-info">
-													<div class="author-pic">
-														<img src="{{ asset('furni/images/person-1.png') }}" alt="Maria Jones" class="img-fluid">
-													</div>
-													<h3 class="font-weight-bold">Maria Jones</h3>
-													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-												</div>
-											</div>
-
-										</div>
-									</div>
-								</div> 
-								<!-- END item -->
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		@include('layout_user.feedback')
 		<!-- End Testimonial Slider -->
 
 		<!-- Start Blog Section -->
@@ -299,10 +181,10 @@
 			<div class="container">
 				<div class="row mb-5">
 					<div class="col-md-6">
-						<h2 class="section-title">Recent Blog</h2>
+						<h2 class="section-title">Tin Tức</h2>
 					</div>
 					<div class="col-md-6 text-start text-md-end">
-						<a href="#" class="more">View All Posts</a>
+						<a href="#" class="more">Xem Tất Cả Tin</a>
 					</div>
 				</div>
 
@@ -312,9 +194,9 @@
 						<div class="post-entry">
 							<a href="#" class="post-thumbnail"><img src="{{ asset('furni/images/post-1.jpg') }}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
-								<h3><a href="#">First Time Home Owner Ideas</a></h3>
+								<h3><a href="#">Không Gian Nhà Xinh</a></h3>
 								<div class="meta">
-									<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+									<p>Hãy thăm quan showroom để thiết kế nội thất thật sáng tạo</p>
 								</div>
 							</div>
 						</div>
@@ -324,9 +206,9 @@
 						<div class="post-entry">
 							<a href="#" class="post-thumbnail"><img src="{{ asset('furni/images/post-2.jpg') }}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
-								<h3><a href="#">How To Keep Your Furniture Clean</a></h3>
+								<h3><a href="#">Không Gian Nhà Xinh</a></h3>
 								<div class="meta">
-									<span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
+									<p>Hãy thăm quan showroom để thiết kế nội thất thật sáng tạo</p>
 								</div>
 							</div>
 						</div>
@@ -336,9 +218,9 @@
 						<div class="post-entry">
 							<a href="#" class="post-thumbnail"><img src="{{ asset('furni/images/post-3.jpg') }}" alt="Image" class="img-fluid"></a>
 							<div class="post-content-entry">
-								<h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
+								<h3><a href="#">Không Gian Nhà Xinh</a></h3>
 								<div class="meta">
-									<span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
+									<p>Hãy thăm quan showroom để thiết kế nội thất thật sáng tạo</p>
 								</div>
 							</div>
 						</div>

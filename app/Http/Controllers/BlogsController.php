@@ -7,9 +7,7 @@ use App\Models\Blogs;
 
 class BlogsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
     protected $blog;
     public function __construct(Blogs $blog)
     {
@@ -23,23 +21,17 @@ class BlogsController extends Controller
         return view('blogs.listblog', compact('blog'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view('blogs.addblog');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $blog = new Blogs();
         $blog->title = $request->title;
         $blog->slug = $request->slug;
-        $blog->content = $request->content;
+        $blog->content = $request->desproducts;
         if ($request->file('file_upload')->isValid()) {
             $uploadedFile = $request->file('file_upload');
             $extension = $uploadedFile->getClientOriginalExtension();
@@ -55,17 +47,11 @@ class BlogsController extends Controller
         return redirect()->route('blogs.index')->with('success', 'Thêm bài viết thành công!');
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(string $id)
     {
         $edit_blog = Blogs::find($id);
@@ -75,9 +61,6 @@ class BlogsController extends Controller
         return view('blogs.editblog', compact('edit_blog'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
         $upblog = Blogs::find($id);

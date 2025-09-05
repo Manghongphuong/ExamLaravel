@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <!-- endinject -->
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" />
-    <!-- <script src="{{asset('ckeditor/ckeditor.js')}}"></script> -->
+    <!-- CKEDITOR.replace('desproducts'); -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
   </head>
   <body class="with-welcome-text">
     <div class="container-scroller">

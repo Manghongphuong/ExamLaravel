@@ -20,7 +20,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleTextarea1">Nội dung</label>
-                        <textarea class="form-control"  name="content" id="exampleTextarea1" rows="4"> {{ $edit_blog->content }} </textarea>
+                        <textarea id="editor" class="form-control"  name="content" rows="4"> {{ $edit_blog->content }} </textarea>
                     </div>
                     <div class="form-group">
                         <label>Tải Anh</label>

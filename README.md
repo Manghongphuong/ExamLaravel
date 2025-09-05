@@ -86,12 +86,13 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - Restfull API + Postman
     + cài php install:api
     + routes -> api.php
-    + Sanpham.php -> php artisan make:resource SanPham
+    + Sanpham.php -> php artisan make:resource SanPham [Resource giúp chuyển (transform) dữ liệu cho thân thiện với người dùng]
     + Tạo controller ApiProductsController -> php artisan make:controller ApiProductsController --api
     + Authentication sử dụng Sanctum
         + Cấu hình model user để dùng token -> Model User -> use Laravel\Sanctum\HasApiTokens
-        + Cấu hình sanctum cho api token -> config/sanctum.php khai báo domain, php artisan config:publish cors -> config/cors.php => 'supports_credentials' => true
+        + Cấu hình sanctum cho api token -> config/sanctum.php khai báo domain, 
+        php artisan config:publish cors -> config/cors.php => 'supports_credentials' => true
         + Cấu hình file bootstrap/app.php ->withMiddleware(function (Middleware $middleware) { $middleware->statefulApi();})
-        + Tạo controller API Authentication để xử lý các request từ phái client gửi
+        + Tạo controller API Authentication để xử lý các request từ phía client gửi
 
 

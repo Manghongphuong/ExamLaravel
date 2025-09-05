@@ -11,18 +11,45 @@
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 						<li class="nav-item active">
-							<a class="nav-link" href="{{ route('index') }}">Home</a>
+							<a class="nav-link" href="{{ route('index') }}">Trang Chủ</a>
 						</li>
-						<li><a class="nav-link" href="{{ route('shop') }}">Shop</a></li>
-						<li><a class="nav-link" href="{{ route('about') }}">About us</a></li>
-						<li><a class="nav-link" href="{{ route('services') }}">Services</a></li>
-						<li><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
-						<li><a class="nav-link" href="{{ route('contact') }}">Contact us</a></li>
+						<li><a class="nav-link" href="{{ route('shop') }}">Sản Phẩm</a></li>
+						<li><a class="nav-link" href="{{ route('about') }}">Chúng Tôi</a></li>
+						<li><a class="nav-link" href="{{ route('services') }}">Dịch Vụ</a></li>
+						<li><a class="nav-link" href="{{ route('blog') }}">Tin Tức</a></li>
+						<li><a class="nav-link" href="{{ route('contact') }}">Liên Hệ</a></li>
 					</ul>
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="#"><img src="{{ asset('furni/images/user.svg') }}"></a></li>
-						<li><a class="nav-link" href="cart.html"><img src="{{ asset('furni/images/cart.svg') }}"></a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">	
+								@auth
+									{{-- Khi đã đăng nhập: Hiện tên user --}}
+									<p class="mb-1 mt-3 fw-semibold d-inline">{{ Auth::user()->name }}</p>
+								@else
+									{{-- Khi chưa đăng nhập: Hiện icon --}}
+									<img src="{{ asset('furni/images/user.svg') }}" alt="User">
+								@endauth 
+							</a>
+
+							<ul class="dropdown-menu" aria-labelledby="userDropdown">
+								@auth
+									{{-- Nếu đăng nhập thì hiện nút Đăng xuất --}}
+									<li>
+									<form action="{{ route('logout_user') }}" method="POST">
+										@csrf
+										<button type="submit" class="dropdown-item">Đăng xuất</button>
+									</form>
+									</li>
+								@else
+									{{-- Nếu chưa đăng nhập thì hiện nút Đăng nhập --}}
+									<li>
+									<a class="dropdown-item" href="{{ route('user_login') }}">Đăng nhập</a>
+									</li>
+								@endauth
+							</ul>
+						</li>
+						<li><a class="nav-link" href="{{ route('cart') }}"><img src="{{ asset('furni/images/cart.svg') }}"></a></li>
 					</ul>
 				</div>
 			</div>

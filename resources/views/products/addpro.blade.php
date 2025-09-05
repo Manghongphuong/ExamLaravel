@@ -40,7 +40,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleTextarea1">Chi Tiết</label>
-                        <textarea class="form-control" name="desproducts" id="exampleTextarea1" rows="4"></textarea>
+                        <textarea id="editor" class="form-control" name="desproducts" rows="4"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary me-2">Submit</button>
                 </form>
@@ -48,4 +48,6 @@
             </div>
         </div>  
     </div>
+
+
 @endsection

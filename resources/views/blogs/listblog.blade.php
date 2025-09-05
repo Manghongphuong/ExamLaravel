@@ -29,7 +29,7 @@
                             <tr>
                                 <td> {{$bl->title}} </td>
                                 <td> {{$bl->slug}} </td>
-                                <td> {{$bl->content }} </td>
+                                <td> {!! $bl->content !!} </td>
                                 <td> <img src="{{ asset('images/' . $bl->image) }}" alt=""> </td>
                                 <td>
                                     <a href="{{ route('blogs.edit', $bl->id) }}" class="btn btn-primary">Edit</a>

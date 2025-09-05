@@ -30,7 +30,6 @@
 		@include('layout_user.footer')
 		<!-- End Footer Section -->	
 
-
 		<script src="{{ asset('furni/js/bootstrap.bundle.min.js') }}"></script>
 		<script src="{{ asset('furni/js/tiny-slider.js') }}"></script>
 		<script src="{{ asset('furni/js/custom.js') }}"></script>

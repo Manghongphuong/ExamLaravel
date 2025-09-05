@@ -18,12 +18,12 @@
                         <input type="text" class="form-control" name="slug" id="exampleInputCity1" placeholder="Thông Tin">
                     </div>
                     <div class="form-group">
-                        <label for="exampleTextarea1">Nội dung</label>
-                        <textarea class="form-control" name="content" id="editor exampleTextarea1" rows="4"></textarea>
-                    </div>
-                    <div class="form-group">
                         <label>Tải Anh</label>
                         <input type="file" class="form-control" name="file_upload" id="inputGroupFile01">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Nội dung</label>
+                        <textarea id="editor" class="form-control" name="desproducts" rows="4"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary me-2">Submit</button>
                 </form>

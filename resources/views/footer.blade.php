@@ -4,3 +4,15 @@
             <span class="float-none float-sm-end d-block mt-1 mt-sm-0 text-center">Copyright © 2023. All rights reserved.</span>
         </div>
     </footer>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'),{
+                height: '300px'
+            })
+            .then(editor => {
+                editor.ui.view.editable.element.style.height = '300px';
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>

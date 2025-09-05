@@ -34,8 +34,8 @@
                                 <td> {{ $products->category_name }} </td>
                                 <td> {{ $products->name }} </td>
                                 <td> {{ $products->price }} </td>
-                                <td> {{ $products->slug }} </td>
-                                <td> {{ $products->description }} </td>
+                                <td> {{ Str::limit($products->slug, 50)}} </td>
+                                <td> {!! Str::limit($products->description, 50) !!} </td>
                                 <td> <img src="{{ asset('images/' . $products->image) }}" width="100px" alt="Hình ảnh"> </td>
                                 <td> 
                                     <a href="{{ route('products.edit', $products->id) }}" class="btn btn-primary">Edit</a>

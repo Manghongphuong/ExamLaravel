@@ -18,7 +18,8 @@
                         @csrf
                         <div class="form-group">
                             <label for="email">Email Người Nhận</label>
-                            <input type="text" class="form-control" name="email" value="{{ old('email') }}" id="email" placeholder="Nhập nhiều email, cách nhau bằng dấu phẩy (,)">
+                            <input type="text" class="form-control" name="email" value="{{ old('email') }}" id="email" 
+                                placeholder="Nhập nhiều email, cách nhau bằng dấu phẩy (,)">
                             @error('email')<p style="color: red">{{ $message }}</p>@enderror
                         </div>
 
@@ -36,7 +37,7 @@
 
                         <button type="submit" class="btn btn-primary me-2">Gửi Email</button>
                         <button type="reset" class="btn btn-light">Hủy</button>
-                    </form>
+                </form>
             </div>
         </div>
     </div>
