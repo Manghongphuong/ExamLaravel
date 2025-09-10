@@ -28,8 +28,8 @@
                             @foreach($blog as $bl)
                             <tr>
                                 <td> {{$bl->title}} </td>
-                                <td> {{$bl->slug}} </td>
-                                <td> {!! $bl->content !!} </td>
+                                <td> {{ Str::limit ($bl->slug, 50) }} </td>
+                                <td> {!! str::limit($bl->content, 50) !!} </td>
                                 <td> <img src="{{ asset('images/' . $bl->image) }}" alt=""> </td>
                                 <td>
                                     <a href="{{ route('blogs.edit', $bl->id) }}" class="btn btn-primary">Edit</a>

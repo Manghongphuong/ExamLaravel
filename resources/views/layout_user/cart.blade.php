@@ -30,12 +30,12 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th class="product-thumbnail">Image</th>
-                          <th class="product-name">Product</th>
-                          <th class="product-price">Price</th>
-                          <th class="product-quantity">Quantity</th>
-                          <th class="product-total">Total</th>
-                          <th class="product-remove">Remove</th>
+                          <th class="product-thumbnail">Hình ảnh</th>
+                          <th class="product-name">Tên sản phẩm</th>
+                          <th class="product-price">Gía</th>
+                          <th class="product-quantity">Số lượng</th>
+                          <th class="product-total">Tổng sản phẩm</th>
+                          <th class="product-remove">Xóa</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -96,22 +96,10 @@
                 <div class="col-md-6">
                   <div class="row mb-5">
                     <div class="col-md-6 mb-3 mb-md-0">
-                      <button class="btn btn-black btn-sm btn-block">Update Cart</button>
+                      <button class="btn btn-black btn-sm btn-block">Cập Nhật</button>
                     </div>
                     <div class="col-md-6">
-                      <button class="btn btn-outline-black btn-sm btn-block">Continue Shopping</button>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <label class="text-black h4" for="coupon">Coupon</label>
-                      <p>Enter your coupon code if you have one.</p>
-                    </div>
-                    <div class="col-md-8 mb-3 mb-md-0">
-                      <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
-                    </div>
-                    <div class="col-md-4">
-                      <button class="btn btn-black">Apply Coupon</button>
+                      <button class="btn btn-outline-black btn-sm btn-block">Tiêp Tục Mua Hàng</button>
                     </div>
                   </div>
                 </div>
@@ -120,7 +108,7 @@
                     <div class="col-md-7">
                       <div class="row">
                         <div class="col-md-12 text-right border-bottom mb-5">
-                          <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                          <h3 class="text-black h4 text-uppercase">Tổng giỏ hàng</h3>
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -142,7 +130,7 @@
         
                       <div class="row">
                         <div class="col-md-12">
-                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
+                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='{{ route('checkout') }}'">Đặt Hàng</button>
                         </div>
                       </div>
                     </div>

@@ -19,6 +19,12 @@ class ClientController extends Controller
         return view('layout_user.home', compact('products', 'products_view'));
 
     }
+    //detail product
+    public function detail_product($id){
+        $product_detail = Products::findOrFail($id);
+        return view('layout_user.detail_product', compact('product_detail'));
+    }
+
     //shop
     public function shop(){
         $products_shop = Products::all();
@@ -34,7 +40,13 @@ class ClientController extends Controller
     }
     //blog
     public function blog(){
-        return view('layout_user.blog');
+        $blog = Blogs::all();
+        return view('layout_user.blog', compact('blog'));
+    }
+    //detail blog
+    public function detail_blog($id){
+        $blog_detail = Blogs::findOrFail($id);
+        return view('layout_user.detail_blog', compact('blog_detail'));
     }
     //contact
     public function contact(){

@@ -49,6 +49,7 @@
 								@endauth
 							</ul>
 						</li>
+						<!-- <li><a class="nav-link" href="{{ route('cart') }}"><img src="{{ asset('furni/images/cart.svg') }}"></a></li> -->
 						<li><a class="nav-link" href="{{ route('cart') }}"><img src="{{ asset('furni/images/cart.svg') }}"></a></li>
 					</ul>
 				</div>

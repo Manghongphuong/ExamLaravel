@@ -35,6 +35,8 @@ Route::get('/services', [ClientController::class, 'services'])->name('services')
 Route::get('/blog', [ClientController::class, 'blog'])->name('blog');
 Route::get('/contact', [ClientController::class, 'contact'])->name('contact');
 Route::get('/cart', [ClientController::class, 'cart'])->name('cart');
+Route::get('/detail_product/{id}', [ClientController::class, 'detail_product'])->name('detail_product');
+Route::get('/detail_blog/{id}', [ClientController::class, 'detail_blog'])->name('detail_blog');
 
 
 

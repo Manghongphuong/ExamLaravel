@@ -40,15 +40,13 @@
 					<!-- Start Column 2 -->
 					 @foreach ($products as $product)
 						<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-							<a class="product-item" href="cart.html">
-								<img src="{{ asset('images/' . $product->image) }}" class="img-fluid product-thumbnail">
+							<a class="product-item" href="{{ route('detail_product', $product->id) }}">
+								<img src="{{ asset('images/'. $product->image) }}" class="img-fluid product-thumbnail">
 								<h3 class="product-title">{{ $product->name }}</h3>
 								<strong class="product-price">{{ $product->price }}</strong>
-
-								<span class="icon-cross">
-									<img src="{{ asset('furni/images/cross.svg') }}" class="img-fluid">
-								</span>
 							</a>
+							<button class="add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng</button>
+    						<button class="add-to-wishlist"><i class="fas fa-heart"></i> Yêu thích</button>
 						</div> 
 					 @endforeach
 					<!-- End Column 2 -->
